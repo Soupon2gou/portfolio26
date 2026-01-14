@@ -20,11 +20,14 @@ const PROFILE_CONFIG = {
   // アイコン画像のパス（data/フォルダ推奨）
   iconPath: "data/profile_icon.jpg",
   // 自己紹介文（改行は \n または <br> で記述）
-  description: "動画制作・DTM・ゲーム開発・プログラミングなど、多岐にわたる創作活動を行っています。\n\n 自由気ままに活動してます。",
+  description: "動画制作・DTM・ゲーム&ツール開発 \n が好きです～ \\(｀・ω・´)/ \n ↓↓↓ Link ↓↓↓",
   // ソーシャルリンク（必要に応じて追加）
   links: [
     { name: "Twitter", url: "https://twitter.com/soupon2gou", icon: "🐦" },
-    { name: "GitHub", url: "https://github.com/soupon2gou", icon: "🐈" }
+    { name: "GitHub", url: "https://github.com/soupon2gou", icon: "🐈" },
+    { name: "Note", url: "https://note.com/soupon2gou2", icon: "📝" },
+    { name: "YouTube", url: "https://www.youtube.com/channel/UCXIew2nHo1cFCpp06wawvWQ", icon: "📺" },
+    { name: "niconico", url: "https://www.nicovideo.jp/user/118672563/video?ref=pc_userpage_menu", icon: "🎞️" }
   ]
 };
 

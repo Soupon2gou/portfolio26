@@ -869,6 +869,13 @@ body>main>.section {
   animation: glitch-skew 3s infinite steps(1);
 }
 
+@media (max-width: 600px) {
+  .win95-windows {
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+  }
+}
+
 .win95-windows::before,
 .win95-windows::after {
   content: "Portfolio";
@@ -904,10 +911,17 @@ body>main>.section {
   animation: glitch-skew 4s infinite steps(2) reverse;
 }
 
+@media (max-width: 600px) {
+  .win95-95 {
+    font-size: 3.5rem;
+  }
+}
+
 .win95-bar-container {
   position: absolute;
   bottom: 15%;
   width: 300px;
+  max-width: 80%;
   height: 20px;
   background: transparent;
   border: 2px solid #fff;

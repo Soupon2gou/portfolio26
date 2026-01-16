@@ -290,14 +290,32 @@ function createMediaElement(item) {
     video.muted = true;           // ミュート（自動再生のため必須）
     video.loop = true;            // ループ再生
     video.playsInline = true;     // インライン再生（iOS対応）
+    video.preload = "auto";       // モバイルでの表示を確実にするため auto に変更
 
-    // 動画の自動再生（ホバー時）
+    // モバイル・デスクトップ両対応の自動再生管理 (IntersectionObserver)
+    // 画面内に入ったら再生、出たら停止することで確実に描画させる
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            video.play().catch(e => {
+              // ユーザー操作前の自動再生制限対策
+              console.log('自動再生待機中:', item.caption);
+            });
+          } else {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.1 }); // 10%見えたら作動
+      observer.observe(video);
+    } else {
+      // 古いブラウザ向けのフォールバック
+      video.autoplay = true;
+    }
+
+    // デスクトップ向けのホバーエフェクト
     video.addEventListener('mouseenter', () => {
       video.play().catch(e => console.log('動画再生エラー:', e));
-    });
-    video.addEventListener('mouseleave', () => {
-      video.pause();
-      video.currentTime = 0;  // 先頭に戻す
     });
 
     return video;

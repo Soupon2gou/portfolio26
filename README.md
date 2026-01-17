@@ -2,7 +2,7 @@
 
 ## 🌐 公開URL
 
-**GitHub Pages**: https://soupon2gou.github.io/portfolio2026/
+**GitHub Pages**: https://soupon2gou.github.io/portfolio26/
 
 このプロジェクトは個人ポートフォリオサイトです。
 

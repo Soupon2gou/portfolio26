@@ -280,7 +280,8 @@ const GALLERY_ITEMS = {
       type: "video",
       link: "https://github.com/soupon2gou/foundation-pose-research",
       tags: ["コンピュータビジョン", "6DoF", "姿勢推定"],
-      description: "最新の6DoF物体姿勢推定手法FoundationPoseの実装と改良。リアルタイム処理と高精度を両立。"
+      description: "最新の6DoF物体姿勢推定手法FoundationPoseの実装と改良。リアルタイム処理と高精度を両立。",
+      isPrivate: true // 非公開設定
     },
     {
       path: "data/20250206_thesis.pdf",

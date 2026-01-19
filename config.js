@@ -20,14 +20,16 @@ const PROFILE_CONFIG = {
   // アイコン画像のパス（data/フォルダ推奨）
   iconPath: "data/profile_icon.jpg",
   // 自己紹介文（改行は \n または <br> で記述）
-  description: "動画制作・DTM・ゲーム&ツール開発 \n が好きです～ \\(｀・ω・´)/ \n ↓↓↓ Link ↓↓↓",
+  description: "動画制作・DTM・ゲーム&ツール開発 \n が好きです～ \\(｀・ω・´)/ ",
   // ソーシャルリンク（必要に応じて追加）
   links: [
     { name: "Twitter", url: "https://twitter.com/soupon2gou", icon: "🐦" },
-    { name: "GitHub", url: "https://github.com/soupon2gou", icon: "🐈" },
-    { name: "Note", url: "https://note.com/soupon2gou2", icon: "📝" },
-    { name: "YouTube", url: "https://www.youtube.com/channel/UCXIew2nHo1cFCpp06wawvWQ", icon: "📺" },
-    { name: "niconico", url: "https://www.nicovideo.jp/user/118672563/video?ref=pc_userpage_menu", icon: "🎞️" }
+    { name: "GitHub", url: "https://github.com/soupon2gou", icon: "💻" },
+    { name: "note", url: "https://note.com/soupon2gou2", icon: "📝" },
+    { name: "YouTube", url: "https://www.youtube.com/@soupon2gou", icon: "▶️" },
+    { name: "日常", url: "https://www.youtube.com/@soupon2gou_nichijou", icon: "☀️" },
+    { name: "ニコニコ", url: "https://www.nicovideo.jp/user/118672563/video?ref=pc_userpage_menu", icon: "📺" },
+    { name: "bilibili", url: "https://space.bilibili.com/1159628614", icon: "哔" }
   ]
 };
 
